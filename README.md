@@ -12,7 +12,7 @@
 ## Installation
 ```bash
 cd ~
-git clone git@github.com:takecchi/dotfiles.git
+git clone git@github.com:kounolk/dotfiles.git
 cd dotfiles
 make
 ```
