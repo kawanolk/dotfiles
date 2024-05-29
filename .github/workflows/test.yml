@@ -1,0 +1,23 @@
+name: Run Test
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  make:
+    runs-on: macos-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Dotfiles
+        run: make
+
+      - name: Pythonを正常にインストールができるか確認
+        run: pyenv install 3.7.13
