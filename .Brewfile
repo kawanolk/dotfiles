@@ -2,6 +2,7 @@ cask_args appdir: "/Applications"
 
 brew "volta"
 brew "docker"
+brew "docker-compose"
 brew "go"
 brew "xz"
 brew "pyenv"
